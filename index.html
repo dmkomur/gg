@@ -13,7 +13,7 @@
                 <nav>
                     <ul class="nav-list">
                         <li><a href="#about">Про гурт</a></li>
-                        <li><a href="#concert">Концерти</a></li>
+                        <li><a href="#concerts">Концерти</a></li>
                         <li><a href="#gallery">Галерея</a></li>
                         <li><a href="#contacts">Контакти</a></li>
                     </ul>
@@ -39,7 +39,7 @@
                     <button class="btn btn-hero">Замовити квитки</button>
                 </div>
             </section>
-            <section class="concerts container">
+            <section class="concerts container" id="concerts">
                 <h2 class="section-title">Найближчі концерти</h2>
 
                 <div class="table">
@@ -91,7 +91,7 @@
                     </div>
                 </div>
             </section>
-            <section class="container squad">
+            <section class="container squad" id="gallery">
                 <h2 class="section-title title-center">Учасники гурту</h2>
                 <ul class="squad-list">
                     <li class="squad-item">
@@ -129,6 +129,140 @@
                     </li>
                 </ul>
             </section>
+            <section id="about">
+                <div class="container">
+                    <h2 class="section-title">Найближчі концерти</h2>
+                    <div class="about-content">
+                        <img
+                            src="./assets/hero.webp"
+                            alt="Band"
+                            class="about-img"
+                            width="320"
+                            height="240"
+                        />
+                        <p class="about-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Expedita eum beatae debitis distinctio
+                            nesciunt, explicabo earum maxime, autem dolor
+                            aliquid voluptatibus laudantium ut? Nulla velit id
+                            facere consequuntur esse, repudiandae illo ullam
+                            itaque veniam, labore quae odio doloribus. Magni
+                            officia ex consequuntur doloremque consectetur,
+                            cumque tempora alias nemo ea provident hic doloribus
+                            voluptatibus adipisci excepturi odio libero
+                            temporibus incidunt ipsa! Dolorem eveniet laudantium
+                            nemo, aperiam esse ipsum rem animi hic, provident
+                            suscipit quos perferendis incidunt vero fugit
+                            voluptatem?
+                            <br /><br />
+                            Labore mollitia voluptate reprehenderit quia quo
+                            iure beatae optio voluptatem eveniet, omnis ipsum
+                            natus assumenda tempora quod nihil eaque quam culpa
+                            quos id inventore consequuntur maxime eum nam nemo?
+                            Dolor consectetur quis repellendus quasi quibusdam
+                            quod aliquam voluptates, labore quaerat in itaque
+                            tempore, fuga laudantium consequatur beatae laborum
+                            aperiam minima vero ipsa ratione sapiente, voluptate
+                            magnam? Recusandae, facere. Adipisci eius facilis
+                            incidunt placeat. <br /><br />Architecto accusamus
+                            consequuntur cupiditate accusantium reprehenderit
+                            est, perspiciatis necessitatibus dolores! Unde
+                            asperiores, praesentium, necessitatibus placeat,
+                            quod error expedita quis dolorem harum dolor nemo
+                            aliquam hic debitis numquam accusamus adipisci eius
+                            quam cupiditate blanditiis nobis ipsam quo optio
+                            fuga! Hic obcaecati dignissimos ratione eligendi
+                            earum aspernatur! Natus, velit inventore possimus
+                            minima odio totam a odit alias at, explicabo
+                            temporibus beatae?
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contacts">
+                <div class="container">
+                    <h2 class="section-title title-center">Учасники гурту</h2>
+                    <p class="contact-subtitle">
+                        Хочеше замовити виступ? Пиши!
+                    </p>
+                    <div class="contact-wrapper">
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Ім'я</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    placeholder="Ваше ім'я"
+                                    required
+                                />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    placeholder="you@mail.com"
+                                    required
+                                />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Повідомлення</label>
+                                <textarea
+                                    id="message"
+                                    rows="5"
+                                    placeholder="Розкажи про свої ідеї..."
+                                    required
+                                ></textarea>
+                            </div>
+
+                            <button type="button" class="btn">
+                                Відправити
+                            </button>
+                        </form>
+
+                        <div class="contact-place">
+                            <p class="contact-place-text">Ми тут. Звертайся!</p>
+                            <img
+                                class="contact-place-img"
+                                src="./assets/map.webp"
+                                alt="map"
+                                width="320"
+                                height="240"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
+        <footer class="container">
+            <div class="footer-wrapper">
+                <div class="footer-top">
+                    <p class="footer-copyright">
+                        © 2025 «Грім та Грім». Всі права захищені.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="#" class="footer-link">Instagram</a>
+                        <a href="#" class="footer-link">YouTube</a>
+                        <a href="#" class="footer-link">Facebook</a>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <a
+                        href="mailto:booking@fotoplay"
+                        class="footer-link footer-link-contact"
+                        >booking@fotoplay</a
+                    >
+                    <a
+                        href="tel:+380991234567"
+                        class="footer-link footer-ink-contact"
+                        >+38 (099) 123-45-67</a
+                    >
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

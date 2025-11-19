@@ -218,7 +218,7 @@
                                 ></textarea>
                             </div>
 
-                            <button type="button" class="btn">
+                            <button type="button" id="get" class="btn">
                                 Відправити
                             </button>
                         </form>
@@ -264,5 +264,21 @@
                 </div>
             </div>
         </footer>
+        <div class="modal-wrap" id="modalWrap" aria-hidden="true">
+            <div class="modal-backdrop" id="modalBackdrop" tabindex="-1"></div>
+
+            <div
+                class="modal"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="modalTitle"
+            >
+                <button class="close-btn" id="modalClose" aria-label="Close">
+                    ✕
+                </button>
+                <div class="content" id="modalTitle">done!</div>
+            </div>
+        </div>
+        <script defer src="./index.js"></script>
     </body>
 </html>

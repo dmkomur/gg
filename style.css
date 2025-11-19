@@ -602,3 +602,66 @@ textarea:focus {
                 padding-bottom: 62px;
         }
 }
+
+
+/* === modal ==== */
+
+.modal-wrap {
+        position: fixed;
+        inset: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+}
+
+.modal-wrap.show {
+        display: flex;
+}
+
+.modal-backdrop {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+}
+
+.modal {
+        width: 240px;
+        background: #032e32;
+        color: var(--light);
+        border-radius: 8px;
+        padding: 14px 12px;
+        position: relative;
+        box-shadow: 0 8px 24px rgba(2, 6, 23, 0.6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 64px;
+}
+
+.modal .close-btn {
+        position: absolute;
+        top: 6px;
+        right: 8px;
+        width: 28px;
+        height: 28px;
+        border-radius: 6px;
+        border: none;
+        background: rgba(255, 255, 255, 0.08);
+        color: #fff;
+        font-weight: 700;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.modal .close-btn:focus {
+        outline: 2px solid rgba(255, 255, 255, 0.18);
+}
+
+.modal .content {
+        font-size: 16px;
+        letter-spacing: 0.4px;
+}
